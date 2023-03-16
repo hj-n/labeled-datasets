@@ -13,7 +13,7 @@ def read_dataset(name):
 	"""
 	path = "./compressed/" + name + "/"
 	path_data = path + "data.bin"
-	path_labels = path + "labels.bin"
+	path_labels = path + "label.bin"
 	## open the data and label binary file
 	with open(path_data, 'rb') as f:
 		data_comp = f.read()
@@ -27,7 +27,7 @@ def read_dataset(name):
 
 def read_dataset_by_path(path):
 	path_data = path + "data.bin"
-	path_labels = path + "labels.bin"
+	path_labels = path + "label.bin"
 	## open the data and label binary file
 	with open(path_data, 'rb') as f:
 		data_comp = f.read()
